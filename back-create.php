@@ -41,7 +41,7 @@
                 echo("<h1>Success!</h1>");
                 echo("</div>");
                 echo("<div class='item'>");
-                echo("<a href='index.php'><button class='btn btn-dark'>Log screen</button></a>");
+                echo("<a href='user-session.php'><button class='btn btn-dark'>Log screen</button></a>");
                 echo("</div>");
             } else {
                 echo("<div class='item'>");

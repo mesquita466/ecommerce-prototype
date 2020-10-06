@@ -1,7 +1,11 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Title</title>
+    <title>Login</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,31 +15,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
   <body class="container">
-
     <div class="box">
         <div class="item">
-            <h1>Create Acc</h1><br>
-        </div>
+            <h1>Login</h1><br>
         <div class="box-form">
             <div class="item">
-                <form action="back-create.php" method="POST">
-                <label for="create-form-name">name: &nbsp;</label>
-                <input type="text" name="name" id="create-form-name" required>
+                <form action="back-login.php" method="POST">
+                <label for="login-form-email">email: &nbsp;</label>
+                <input type="email" name="email" id="login-form-email" required value="<?php 
+                    if(isset($_SESSION["email"])) {
+                        echo($_SESSION["email"]);
+                    }
+                ?>">
             </div>
             <div class="item">
-                <label for="create-form-email">email: &nbsp;</label>
-                <input type="email" name="email" id="create-form-email" required>
+                <label for="login-form-password">password: &nbsp;</label>
+                <input type="password" name="password" id="login-form-password" required>
             </div>
+            <?php
+                if(isset($_SESSION["ERROR"])) {
+                    echo('<div class="item" class="alert alert-danger" role="alert">
+                          <div class="alert alert-danger" role="alert">'.
+                          $_SESSION["ERROR"].'
+                          </div>
+                          </div>');
+                    session_unset();
+                }
+            ?>
             <div class="item">
-                <label for="create-form-password">password: &nbsp;</label>
-                <input type="password" name="password" id="create-form-password" required>
-            </div>
-            <div class="item">
-                <input type="submit" name="create" value="Create" class="btn btn-dark">
+                <input type="submit" name="signin" value="Sign in" class="btn btn-dark">
                 </form>
             </div>
             <div class="item">
-                <a href="user-session.php"><button class="btn btn-dark">Back</button></a>
+                <a href="create-user.php"><button class="btn btn-dark">Create account</button></a>
             </div>
         </div>
     </div>
