@@ -1,20 +1,22 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Title</title>
+    <title>Register</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/create.css">
 </head>
   <body class="container">
-
     <div class="box">
         <div class="item">
-            <h1>Create Acc</h1><br>
+            <h1>Register</h1><br>
         </div>
         <div class="box-form">
             <div class="item">
@@ -30,6 +32,28 @@
                 <label for="create-form-password">password: &nbsp;</label>
                 <input type="password" name="password" id="create-form-password" required>
             </div>
+            <div class="item">
+                <label for="birthday">birthday: &nbsp;</label>
+               ed <input type="date" name="birthday" id="birthday" requir>
+            </div>
+            <div class="item">
+                <input type="radio" name="genre" id="male" value="M">
+                <label for="male">Male</label>&nbsp;
+                <input type="radio" name="genre" id="female" value="F">
+                <label for="female">Female</label>&nbsp;
+                <input type="radio" name="genre" id="other" value="null" checked>
+                <label for=" other">Other</label>&nbsp;
+            </div>
+            <?php
+                if(isset($_SESSION["ERROR"])) {
+                    echo('<div class="item" class="alert alert-danger" role="alert">
+                          <div class="alert alert-danger" role="alert">'.
+                          $_SESSION["ERROR"].'
+                          </div>
+                          </div>');
+                    session_unset();
+                }
+            ?>
             <div class="item">
                 <input type="submit" name="create" value="Create" class="btn btn-dark">
                 </form>

@@ -34,9 +34,17 @@
             </div>
             <?php
                 if(isset($_SESSION["ERROR"])) {
-                    echo('<div class="item" class="alert alert-danger" role="alert">
+                    echo('<div class="item">
                           <div class="alert alert-danger" role="alert">'.
                           $_SESSION["ERROR"].'
+                          </div>
+                          </div>');
+                    session_unset();
+                }
+                if(isset($_SESSION["SUCCESS"])) {
+                    echo('<div class="item">
+                          <div class="alert alert-success" role="alert">'.
+                          $_SESSION["SUCCESS"].'
                           </div>
                           </div>');
                     session_unset();
