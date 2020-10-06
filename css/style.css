@@ -1,0 +1,34 @@
+body {
+    background-color: #cbe896;
+}
+.box {
+    /* border: 1px solid black; */
+    background-color: #aac0aa;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50px;
+}
+.box-form {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
