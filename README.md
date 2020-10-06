@@ -1,4 +1,4 @@
-# simple-login-screen
+# e-commerce-prototype
 This is my first login system with PHP integrated into the database. Given the simplicity, you might be better off ignoring it unless you want to see something really simple. (maybe part of the code is in Portuguese)
 
 1 - don't forget to start apache and mysql server.     
