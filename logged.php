@@ -20,10 +20,16 @@
             <img src="images/profile-male.png" alt="" id="profile-image">
         </div>
         <div class="box-profile-item">
-            <h2><?php echo($_SESSION["username"]); ?></h2>
+            <h2><?php echo($_SESSION["name"]); ?></h2>
         </div>
         <div class="box-profile-item">
             <h5>email: <?php echo($_SESSION["email"]); ?></h5>
+        </div>
+        <div class="box-profile-item">
+            <h5>birthday: <?php echo($_SESSION["birthday"]); ?></h5>
+        </div>
+        <div class="box-profile-item">
+            <h5>genre: <?php echo($_SESSION["genre"]); ?></h5>
         </div>
         <div class="box-profile-item">
             <h5>id: <?php echo($_SESSION["id"]); ?></h5>
