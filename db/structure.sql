@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Out-2020 às 22:04
+-- Tempo de geração: 07-Out-2020 às 02:14
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.9
 
@@ -33,7 +33,7 @@ CREATE TABLE `tb_users` (
   `user_email` varchar(50) NOT NULL,
   `user_password` varchar(50) NOT NULL,
   `user_birthday` date NOT NULL,
-  `user_genre` enum('M','F') DEFAULT NULL
+  `user_genre` enum('male','female','other') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -41,7 +41,13 @@ CREATE TABLE `tb_users` (
 --
 
 INSERT INTO `tb_users` (`user_id`, `user_name`, `user_email`, `user_password`, `user_birthday`, `user_genre`) VALUES
-(1, 'admin', 'admin@admin.com', 'admin', '2001-07-03', 'M');
+(1, 'admin', 'admin@admin.com', 'admin', '2001-07-03', 'other'),
+(4, 'Rick Sanchez', 'rsanchez@galaxy.com', 'hotplanets', '1974-03-18', 'male'),
+(5, 'Connor Mason', 'cmason@nbt.com', 'moralpanic123', '1991-10-23', 'male'),
+(6, 'Lucas Mesquita', 'lucas.msouza@senac.com', 'lms03701', '2001-07-03', 'male'),
+(7, 'Cassie', 'cassie@beta.com', 'becassie', '1997-05-18', 'other'),
+(8, 'Patrick', 'pocket@trick.com', 'ptrix', '1985-12-05', 'other'),
+(9, 'Casey Gardner', 'casey.gard@hotmail.com', 'caseygard', '1999-09-18', 'female');
 
 --
 -- Índices para tabelas despejadas
@@ -62,7 +68,7 @@ ALTER TABLE `tb_users`
 -- AUTO_INCREMENT de tabela `tb_users`
 --
 ALTER TABLE `tb_users`
-  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
