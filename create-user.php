@@ -37,11 +37,11 @@
                 <input type="date" name="birthday" id="birthday" placeholder="birthday" require>
             </div>
             <div class="item">
-                <input type="radio" name="genre" id="male" value="M">
+                <input type="radio" name="genre" id="male" value="male">
                 <label for="male">Male</label>&nbsp;
-                <input type="radio" name="genre" id="female" value="F">
+                <input type="radio" name="genre" id="female" value="female">
                 <label for="female">Female</label>&nbsp;
-                <input type="radio" name="genre" id="other" value="null" checked>
+                <input type="radio" name="genre" id="other" value="other" checked>
                 <label for=" other">Other</label>&nbsp;
             </div>
             <?php
