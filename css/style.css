@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Oswald:wght@700&family=Roboto+Mono:ital,wght@1,300;1,700&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;
+}
 body {
     background-color: #cbe896;
 }

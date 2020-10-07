@@ -21,16 +21,16 @@
         <div class="box-form">
             <div class="item">
                 <form action="back-login.php" method="POST">
-                <label for="login-form-email">email: &nbsp;</label>
-                <input type="email" name="email" id="login-form-email" required value="<?php 
+                <!-- <label for="login-form-email">email: &nbsp;</label> -->
+                <input type="email" name="email" id="login-form-email" placeholder="email" required value="<?php 
                     if(isset($_SESSION["email"])) {
                         echo($_SESSION["email"]);
                     }
                 ?>">
             </div>
             <div class="item">
-                <label for="login-form-password">password: &nbsp;</label>
-                <input type="password" name="password" id="login-form-password" required>
+                <!-- <label for="login-form-password">password: &nbsp;</label> -->
+                <input type="password" name="password" id="login-form-password" required placeholder="password">
             </div>
             <?php
                 if(isset($_SESSION["ERROR"])) {

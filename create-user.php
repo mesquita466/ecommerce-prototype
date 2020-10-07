@@ -21,20 +21,20 @@
         <div class="box-form">
             <div class="item">
                 <form action="back-create.php" method="POST">
-                <label for="create-form-name">name: &nbsp;</label>
-                <input type="text" name="name" id="create-form-name" required>
+                <!-- <label for="create-form-name">name: &nbsp;</label> -->
+                <input type="text" name="name" id="create-form-name" placeholder="name" required>
             </div>
             <div class="item">
-                <label for="create-form-email">email: &nbsp;</label>
-                <input type="email" name="email" id="create-form-email" required>
+                <!-- <label for="create-form-email">email: &nbsp;</label> -->
+                <input type="email" name="email" id="create-form-email" placeholder="email" required>
             </div>
             <div class="item">
-                <label for="create-form-password">password: &nbsp;</label>
-                <input type="password" name="password" id="create-form-password" required>
+                <!-- <label for="create-form-password">password: &nbsp;</label> -->
+                <input type="password" name="password" id="create-form-password" placeholder="password" required>
             </div>
             <div class="item">
-                <label for="birthday">birthday: &nbsp;</label>
-               ed <input type="date" name="birthday" id="birthday" requir>
+                <!-- <label for="birthday">birthday: &nbsp;</label> -->
+                <input type="date" name="birthday" id="birthday" placeholder="birthday" require>
             </div>
             <div class="item">
                 <input type="radio" name="genre" id="male" value="M">
