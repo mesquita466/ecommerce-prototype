@@ -27,6 +27,6 @@
     } else {
         $_SESSION["ERROR"] = "Usuário ou senha inválidos.";
         $_SESSION["email"] = $email;
-        header("location:user-session.php");
+        header("location:index.php");
     }
 ?>
