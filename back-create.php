@@ -23,6 +23,6 @@
                 VALUES('". $name."', '".$email."', '".$password."', '".$birthday."', '".$genre."');";
         mysqli_query($conn, $sql);
         $_SESSION["SUCCESS"] = "Registered successfully";
-        header("location:user-session.php");
+        header("location:index.php");
     }
 ?>
