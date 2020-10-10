@@ -1,5 +1,4 @@
-# ecommerce-prototype (in progress)
-This is an ecommerce prototype and my first "big" academic prototype. Feel free to use like a template or contributing.  
+# Login / sign up template
 
 1 - don't forget to start apache and mysql server.  
 
